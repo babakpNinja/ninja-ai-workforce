@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" fill="none" font-family="Overpass, sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#005CFF"/><stop offset="1" stop-color="#6e6bff"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef3ff"/><stop offset="1" stop-color="#dbe6ff"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0c1c44" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="640" height="520" rx="24" fill="url(#g2)"/>
+  <!-- connection lines -->
+  <g stroke="#005CFF" stroke-opacity="0.28" stroke-width="2">
+    <line x1="320" y1="260" x2="150" y2="120"/><line x1="320" y1="260" x2="500" y2="120"/>
+    <line x1="320" y1="260" x2="140" y2="400"/><line x1="320" y1="260" x2="510" y2="400"/>
+    <line x1="320" y1="260" x2="320" y2="90"/><line x1="320" y1="260" x2="320" y2="440"/>
+  </g>
+  <!-- orbiting tool chips -->
+  <g filter="url(#s)">
+    <g><circle cx="150" cy="120" r="34" fill="#fff"/><text x="150" y="129" font-size="26" text-anchor="middle">💬</text></g>
+    <g><circle cx="500" cy="120" r="34" fill="#fff"/><text x="500" y="129" font-size="26" text-anchor="middle">📊</text></g>
+    <g><circle cx="140" cy="400" r="34" fill="#fff"/><text x="140" y="409" font-size="26" text-anchor="middle">🧩</text></g>
+    <g><circle cx="510" cy="400" r="34" fill="#fff"/><text x="510" y="409" font-size="26" text-anchor="middle">🚀</text></g>
+    <g><circle cx="320" cy="90" r="30" fill="#fff"/><text x="320" y="99" font-size="24" text-anchor="middle">🔌</text></g>
+    <g><circle cx="320" cy="440" r="30" fill="#fff"/><text x="320" y="449" font-size="24" text-anchor="middle">🌐</text></g>
+  </g>
+  <!-- core -->
+  <g filter="url(#s)">
+    <circle cx="320" cy="260" r="78" fill="url(#g1)"/>
+    <text x="320" y="250" font-size="44" text-anchor="middle" fill="#fff" font-weight="800">◈</text>
+    <text x="320" y="298" font-size="17" text-anchor="middle" fill="#dce6ff" font-weight="700">AI workforce</text>
+  </g>
+</svg>
