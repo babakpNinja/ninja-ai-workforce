@@ -181,9 +181,3 @@ section{position:relative}
 .t-bld{background:linear-gradient(155deg,#dbd9ff,#b4afff)}
 .t-ops{background:linear-gradient(155deg,#cdeef6,#a6dcef)}
 .t-ana{background:linear-gradient(155deg,#d6e7ff,#bcd4ff)}
-
-
-/* scroll reveal — only active when JS adds .rv-on (content visible otherwise) */
-.rv-on [data-rv]{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
-.rv-on [data-rv].rv-in{opacity:1;transform:none}
-@media (prefers-reduced-motion: reduce){ .rv-on [data-rv]{opacity:1;transform:none;transition:none} }
