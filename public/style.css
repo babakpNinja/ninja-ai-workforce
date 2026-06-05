@@ -296,3 +296,16 @@ section{position:relative}
   .logo-grid{grid-template-columns:repeat(2,1fr)}
   .subnav-label{display:none}
 }
+
+/* fix: nav <a> color rules (.subnav a / .topnav a) were overriding .btn-solid white text → gray on blue. Force white. */
+a.btn-solid:link, a.btn-solid:visited, .subnav a.btn-solid, .topbar a.btn-solid, header a.btn-solid{color:#fff}
+
+/* workforce: 5 named AI employees with photos (round 4) */
+.workforce .team-grid{grid-template-columns:repeat(5,1fr);gap:18px}
+.team-card .ph{aspect-ratio:1/1}
+.team-card .ph img{object-position:center top}
+.team-card h3{margin:15px 18px 0;font-size:20px}
+.team-card .role{display:block;margin:2px 18px 8px;color:var(--blue);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+.team-card p{margin:0 18px 20px;font-size:13.5px}
+@media(max-width:1000px){ .workforce .team-grid{grid-template-columns:repeat(3,1fr)} }
+@media(max-width:620px){ .workforce .team-grid{grid-template-columns:repeat(2,1fr)} }
