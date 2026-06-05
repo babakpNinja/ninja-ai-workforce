@@ -22,12 +22,18 @@ if (form) form.addEventListener('submit', async (e) => {
   } finally { btn.disabled=false; btn.textContent=old; }
 });
 
-// Reveal on scroll
-const io = new IntersectionObserver((entries)=>{
-  entries.forEach(en=>{ if(en.isIntersecting){ en.target.style.opacity=1; en.target.style.transform='none'; io.unobserve(en.target);} });
-},{threshold:.12});
-document.querySelectorAll('.sec-head,.cmp-card,.team-card,.cap,.uc,.chat,.ent-in,.stat').forEach((el,i)=>{
-  el.style.opacity=0; el.style.transform='translateY(16px)';
-  el.style.transition=`opacity .5s ease ${(i%6)*0.05}s, transform .5s ease ${(i%6)*0.05}s`;
-  io.observe(el);
-});
+// Reveal on scroll (progressive enhancement — content is visible by default)
+(function(){
+  var els = Array.prototype.slice.call(document.querySelectorAll('.sec-head,.cmp-card,.team-card,.cap,.uc,.chat,.ent-in,.stat'));
+  if(!els.length) return;
+  document.documentElement.classList.add('rv-on');      // only now do we hide-then-animate
+  els.forEach(function(el){ el.setAttribute('data-rv',''); });
+  var reveal=function(el){ el.classList.add('rv-in'); };
+  if(!('IntersectionObserver' in window)){ els.forEach(reveal); return; }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ reveal(en.target); io.unobserve(en.target); } });
+  },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){ io.observe(el); });
+  // failsafe: never leave anything hidden
+  setTimeout(function(){ els.forEach(reveal); }, 1600);
+})();
