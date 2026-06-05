@@ -181,3 +181,8 @@ section{position:relative}
 .t-bld{background:linear-gradient(155deg,#dbd9ff,#b4afff)}
 .t-ops{background:linear-gradient(155deg,#cdeef6,#a6dcef)}
 .t-ana{background:linear-gradient(155deg,#d6e7ff,#bcd4ff)}
+
+/* real Ninja logo */
+.brand-logo{height:30px;width:auto;display:block}
+.brand-logo-light{filter:brightness(0) invert(1)}
+.nav .brand{padding:2px 0}
