@@ -12,26 +12,93 @@
 <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="theme-color" content="#005CFF" />
-<link rel="stylesheet" href="/style.css?v=20260605c" />
+<link rel="stylesheet" href="/style.css?v=20260605d" />
 </head>
 <body>
 
-<!-- NAV -->
-<header class="nav" id="nav">
-  <div class="wrap nav-in">
-    <a class="brand" href="#top"><img class="brand-logo" src="/img/ninja-logo.svg?v=20260605c" alt="NinjaTech AI" width="150" height="32" /></a>
-    <nav class="nav-links">
-      <a href="#workforce">AI Employees</a>
-      <a href="#capabilities">Capabilities</a>
-      <a href="#usecases">Use cases</a>
-      <a href="#enterprise">Enterprise</a>
+<!-- TOP BAR — matches ninjatech.ai -->
+<header class="topbar" id="top-nav">
+  <div class="wrap topbar-in">
+    <a class="brand" href="https://www.ninjatech.ai/" target="_blank" rel="noopener"><img class="brand-logo" src="/img/ninja-logo.svg?v=20260605d" alt="NinjaTech AI" width="150" height="32" /></a>
+    <nav class="mainnav">
+      <div class="mn-item">
+        <button class="mn-trig" type="button">Product <i>▾</i></button>
+        <div class="mn-menu mega">
+          <div class="mega-col"><h6>Platform</h6>
+            <a href="https://www.ninjatech.ai/solutions/individuals" target="_blank" rel="noopener">Overview</a>
+            <a href="https://www.ninjatech.ai/product/super-ninja" target="_blank" rel="noopener">SuperNinja</a>
+            <a href="https://www.ninjatech.ai/product/ai-employees" target="_blank" rel="noopener">AI Employees</a>
+            <a href="https://www.ninjatech.ai/app-store" target="_blank" rel="noopener">App Store</a>
+            <a href="https://www.ninjatech.ai/product/deep-research" target="_blank" rel="noopener">Deep Research</a>
+            <a href="https://www.ninjatech.ai/product/benchmarks" target="_blank" rel="noopener">Benchmarks</a>
+          </div>
+          <div class="mega-col"><h6>Tools</h6>
+            <a href="https://www.ninjatech.ai/product/ai-image-generator" target="_blank" rel="noopener">AI Image Generator</a>
+            <a href="https://www.ninjatech.ai/product/ai-image-editor" target="_blank" rel="noopener">AI Image Editor</a>
+            <a href="https://www.ninjatech.ai/product/ai-code-generator" target="_blank" rel="noopener">AI Code Generator</a>
+            <a href="https://www.ninjatech.ai/product/ai-writer" target="_blank" rel="noopener">AI Writer</a>
+            <a href="https://www.ninjatech.ai/product/ai-research-agent" target="_blank" rel="noopener">AI Researcher</a>
+          </div>
+          <div class="mega-col"><h6>Features</h6>
+            <a href="https://www.ninjatech.ai/product/external-model-access" target="_blank" rel="noopener">External AI Models</a>
+            <a href="https://www.ninjatech.ai/product/file-upload-analysis" target="_blank" rel="noopener">File Upload &amp; Analysis</a>
+            <a href="https://www.ninjatech.ai/product/ai-prompt-tools" target="_blank" rel="noopener">Prompt Tools</a>
+          </div>
+        </div>
+      </div>
+      <div class="mn-item">
+        <button class="mn-trig" type="button">Solutions <i>▾</i></button>
+        <div class="mn-menu mega">
+          <div class="mega-col"><h6>Business</h6>
+            <a href="https://www.ninjatech.ai/solutions/business" target="_blank" rel="noopener">Overview</a>
+            <a href="https://www.ninjatech.ai/use-cases" target="_blank" rel="noopener">Use Cases</a>
+            <a href="https://www.ninjatech.ai/request-a-demo" target="_blank" rel="noopener">Request a demo</a>
+          </div>
+          <div class="mega-col"><h6>Roles</h6>
+            <a href="https://www.ninjatech.ai/solutions/engineering" target="_blank" rel="noopener">Engineering</a>
+          </div>
+          <div class="mega-col"><h6>Industries</h6>
+            <a href="https://www.ninjatech.ai/solutions/oil-gas" target="_blank" rel="noopener">Oil &amp; Gas</a>
+            <a href="https://www.ninjatech.ai/solutions/chemical-petrochemical" target="_blank" rel="noopener">Chemical</a>
+            <a href="https://www.ninjatech.ai/solutions/manufacturing" target="_blank" rel="noopener">Manufacturing</a>
+          </div>
+        </div>
+      </div>
+      <div class="mn-item">
+        <button class="mn-trig" type="button">Resources <i>▾</i></button>
+        <div class="mn-menu">
+          <a href="https://support.ninjatech.ai/" target="_blank" rel="noopener">Help Center</a>
+          <a href="https://www.ninjatech.ai/faq" target="_blank" rel="noopener">FAQ</a>
+          <a href="https://www.ninjatech.ai/glossary" target="_blank" rel="noopener">Glossary</a>
+          <a href="https://www.ninjatech.ai/blog" target="_blank" rel="noopener">Blog</a>
+          <a href="https://www.ninjatech.ai/about" target="_blank" rel="noopener">About</a>
+          <a href="https://www.ninjatech.ai/news" target="_blank" rel="noopener">News</a>
+          <a href="https://www.ninjatech.ai/careers" target="_blank" rel="noopener">Careers</a>
+        </div>
+      </div>
+      <a class="mn-link" href="https://www.ninjatech.ai/pricing" target="_blank" rel="noopener">Pricing</a>
     </nav>
-    <div class="nav-cta">
-      <a class="btn btn-ghost" href="https://www.ninjatech.ai/request-a-demo" target="_blank" rel="noopener">Contact sales</a>
-      <a class="btn btn-solid" href="#waitlist">Join the waitlist</a>
+    <div class="topbar-cta">
+      <a class="btn btn-ghost" href="https://www.ninjatech.ai/request-a-demo" target="_blank" rel="noopener">Contact Sales</a>
+      <a class="btn btn-solid" href="https://super.myninja.ai/" target="_blank" rel="noopener">Try for Free</a>
     </div>
   </div>
 </header>
+
+<!-- SUB NAV — this launch page -->
+<div class="subnav" id="subnav">
+  <div class="wrap subnav-in">
+    <span class="subnav-label"><span class="sdot"></span> AI Workforce · June 2026</span>
+    <nav class="subnav-links">
+      <a href="#workforce">AI Employees</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#integrations">Integrations</a>
+      <a href="#usecases">Use cases</a>
+      <a href="#enterprise">Enterprise</a>
+    </nav>
+    <a class="btn btn-solid btn-sm" href="#waitlist">Join the waitlist</a>
+  </div>
+</div>
 
 <a id="top"></a>
 
@@ -53,7 +120,7 @@
       </ul>
     </div>
     <div class="hero-art">
-      <img src="/img/hero.svg?v=20260605c" alt="An AI workforce collaborating across your tools" />
+      <img src="/img/hero.svg?v=20260605d" alt="An AI workforce collaborating across your tools" />
     </div>
   </div>
 </section>
@@ -118,6 +185,53 @@
   </div>
 </section>
 
+<!-- INTEGRATIONS -->
+<section class="integrations" id="integrations">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">3,000+ integrations</span>
+      <h2>Already fluent in your entire stack.</h2>
+      <p class="sec-sub">One click to authorize. Your AI employees plug straight into the tools your team already runs — <strong>3,000+ apps</strong> through our Pipedream-powered integration layer.</p>
+    </div>
+    <div class="int-grid">
+        <div class="int-chip" title="Slack"><img src="/img/int/slack.svg?v=20260605d" alt="Slack" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Gmail"><img src="/img/int/gmail.svg?v=20260605d" alt="Gmail" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Google Sheets"><img src="/img/int/googlesheets.svg?v=20260605d" alt="Google Sheets" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="GitHub"><img src="/img/int/github.svg?v=20260605d" alt="GitHub" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Salesforce"><img src="/img/int/salesforce.svg?v=20260605d" alt="Salesforce" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="HubSpot"><img src="/img/int/hubspot.svg?v=20260605d" alt="HubSpot" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Notion"><img src="/img/int/notion.svg?v=20260605d" alt="Notion" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Jira"><img src="/img/int/jira.svg?v=20260605d" alt="Jira" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Stripe"><img src="/img/int/stripe.svg?v=20260605d" alt="Stripe" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Airtable"><img src="/img/int/airtable.svg?v=20260605d" alt="Airtable" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Shopify"><img src="/img/int/shopify.svg?v=20260605d" alt="Shopify" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Zendesk"><img src="/img/int/zendesk.svg?v=20260605d" alt="Zendesk" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Asana"><img src="/img/int/asana.svg?v=20260605d" alt="Asana" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Linear"><img src="/img/int/linear.svg?v=20260605d" alt="Linear" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Trello"><img src="/img/int/trello.svg?v=20260605d" alt="Trello" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Google Calendar"><img src="/img/int/googlecalendar.svg?v=20260605d" alt="Google Calendar" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Mailchimp"><img src="/img/int/mailchimp.svg?v=20260605d" alt="Mailchimp" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Discord"><img src="/img/int/discord.svg?v=20260605d" alt="Discord" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Zoom"><img src="/img/int/zoom.svg?v=20260605d" alt="Zoom" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Intercom"><img src="/img/int/intercom.svg?v=20260605d" alt="Intercom" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Twilio"><img src="/img/int/twilio.svg?v=20260605d" alt="Twilio" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="ClickUp"><img src="/img/int/clickup.svg?v=20260605d" alt="ClickUp" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Snowflake"><img src="/img/int/snowflake.svg?v=20260605d" alt="Snowflake" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Dropbox"><img src="/img/int/dropbox.svg?v=20260605d" alt="Dropbox" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Google Drive"><img src="/img/int/googledrive.svg?v=20260605d" alt="Google Drive" loading="lazy" width="30" height="30" /></div>
+        <div class="int-chip" title="Calendly"><img src="/img/int/calendly.svg?v=20260605d" alt="Calendly" loading="lazy" width="30" height="30" /></div>
+      <div class="int-chip int-more" title="and 3,000 more"><span>+3,000<br>more</span></div>
+    </div>
+    <div class="int-note-card">
+      <span class="int-i">🌐</span>
+      <div>
+        <h4>Don't see your tool? It still works.</h4>
+        <p>Beyond the catalog, every AI employee ships with <strong>advanced cloud-based browser automation</strong> — so it can operate <strong>virtually any tool on the planet</strong>, as long as it's reachable in a browser. Internal admin panels, niche SaaS, legacy portals — no API required.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CAPABILITIES -->
 <section class="caps" id="capabilities">
   <div class="wrap">
@@ -133,6 +247,51 @@
       <div class="cap"><span class="cap-i">🔌</span><h3>3,000+ integrations</h3><p>One click to authorize. They already know your stack — plus built-in browser automation for the rest.</p></div>
       <div class="cap"><span class="cap-i">🧩</span><h3>Model-agnostic</h3><p>OpenAI, Anthropic, Gemini or open-source — choose the right brain per team and task.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- INTEGRATIONS -->
+<section class="integrations" id="integrations">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Integrations</span>
+      <h2>Connected to 3,000+ tools, out of the box.</h2>
+      <p class="sec-sub">One click to authorize — your AI employees plug straight into the apps you already run, powered by our Pipedream integration layer.</p>
+    </div>
+    <div class="logo-grid">
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/slack.svg);mask-image:url(/img/integrations/slack.svg)"></span><b>Slack</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/gmail.svg);mask-image:url(/img/integrations/gmail.svg)"></span><b>Gmail</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/googlesheets.svg);mask-image:url(/img/integrations/googlesheets.svg)"></span><b>Google Sheets</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/salesforce.svg);mask-image:url(/img/integrations/salesforce.svg)"></span><b>Salesforce</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/hubspot.svg);mask-image:url(/img/integrations/hubspot.svg)"></span><b>HubSpot</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/notion.svg);mask-image:url(/img/integrations/notion.svg)"></span><b>Notion</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/github.svg);mask-image:url(/img/integrations/github.svg)"></span><b>GitHub</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/jira.svg);mask-image:url(/img/integrations/jira.svg)"></span><b>Jira</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/linear.svg);mask-image:url(/img/integrations/linear.svg)"></span><b>Linear</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/stripe.svg);mask-image:url(/img/integrations/stripe.svg)"></span><b>Stripe</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/airtable.svg);mask-image:url(/img/integrations/airtable.svg)"></span><b>Airtable</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/asana.svg);mask-image:url(/img/integrations/asana.svg)"></span><b>Asana</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/shopify.svg);mask-image:url(/img/integrations/shopify.svg)"></span><b>Shopify</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/zendesk.svg);mask-image:url(/img/integrations/zendesk.svg)"></span><b>Zendesk</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/googlecalendar.svg);mask-image:url(/img/integrations/googlecalendar.svg)"></span><b>Google Calendar</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/googledrive.svg);mask-image:url(/img/integrations/googledrive.svg)"></span><b>Google Drive</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/dropbox.svg);mask-image:url(/img/integrations/dropbox.svg)"></span><b>Dropbox</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/twilio.svg);mask-image:url(/img/integrations/twilio.svg)"></span><b>Twilio</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/mailchimp.svg);mask-image:url(/img/integrations/mailchimp.svg)"></span><b>Mailchimp</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/trello.svg);mask-image:url(/img/integrations/trello.svg)"></span><b>Trello</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/intercom.svg);mask-image:url(/img/integrations/intercom.svg)"></span><b>Intercom</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/discord.svg);mask-image:url(/img/integrations/discord.svg)"></span><b>Discord</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/zoom.svg);mask-image:url(/img/integrations/zoom.svg)"></span><b>Zoom</b></div>
+        <div class="logo-tile"><span class="ico" style="-webkit-mask-image:url(/img/integrations/openai.svg);mask-image:url(/img/integrations/openai.svg)"></span><b>OpenAI</b></div>
+    </div>
+    <div class="int-callout">
+      <span class="ic">🌐</span>
+      <div>
+        <h4>Don't see your tool? It still works.</h4>
+        <p>Beyond 3,000+ native integrations, every AI employee drives an <strong>advanced cloud-based browser</strong> — so it can operate virtually <strong>any tool on the planet</strong>, as long as it's reachable in a browser. If it has a login and a screen, your workforce can use it.</p>
+      </div>
+    </div>
+    <p class="int-note">+ 2,976 more · powered by Pipedream</p>
   </div>
 </section>
 
@@ -156,22 +315,28 @@
 
 <!-- ENTERPRISE -->
 <section class="enterprise" id="enterprise">
-  <div class="wrap ent-in">
-    <div class="ent-copy">
-      <span class="kicker light">Enterprise-ready</span>
-      <h2>Your employees. Your rules.<br>Your infrastructure.</h2>
-      <ul class="ent-list">
-        <li><b>Deploy anywhere</b> — managed SaaS, on-prem in your VPC, or fully air-gapped for sovereign, classified and regulated work.</li>
-        <li><b>Cost-efficient at scale</b> — custom-silicon inference via our AWS Trainium &amp; Inferentia partnership.</li>
-        <li><b>Governed &amp; auditable</b> — every step logged and sourced, with human-in-the-loop controls.</li>
-      </ul>
-      <a class="btn btn-solid btn-lg" href="https://www.ninjatech.ai/request-a-demo" target="_blank" rel="noopener">Contact sales →</a>
+  <div class="wrap">
+    <div class="ent-head">
+      <span class="kicker light">Enterprise · air-gapped</span>
+      <h2>Unmetered intelligence —<br>for your entire workforce.</h2>
+      <p class="ent-lede">The industry is racing to put <em>unmetered intelligence</em> on every desktop. We put it to <strong>work</strong>: a tireless AI workforce that lives inside your walls, on your infrastructure, governed end-to-end — no per-seat rationing, no data leaving your perimeter.</p>
     </div>
-    <div class="ent-stats">
-      <div class="stat"><b>3,000+</b><span>integrations</span></div>
-      <div class="stat"><b>VPC</b><span>on-prem &amp; air-gapped</span></div>
-      <div class="stat"><b>24/7</b><span>always-on</span></div>
-      <div class="stat"><b>∞</b><span>runs for months</span></div>
+    <div class="ent-in">
+      <div class="ent-copy">
+        <ul class="ent-list">
+          <li><b>Deploy anywhere</b> — managed SaaS, on-prem in your VPC, or fully air-gapped for sovereign, classified and regulated work.</li>
+          <li><b>Unmetered by design</b> — your workforce runs as long and as hard as the job needs. Scale capacity without per-seat or per-token anxiety.</li>
+          <li><b>Cost-efficient at scale</b> — custom-silicon inference via our AWS Trainium &amp; Inferentia partnership.</li>
+          <li><b>Governed &amp; auditable</b> — every step logged and sourced, with human-in-the-loop controls and your choice of model.</li>
+        </ul>
+        <a class="btn btn-solid btn-lg" href="https://www.ninjatech.ai/request-a-demo" target="_blank" rel="noopener">Talk to enterprise →</a>
+      </div>
+      <div class="ent-stats">
+        <div class="stat"><b>&#8734;</b><span>unmetered runtime</span></div>
+        <div class="stat"><b>VPC</b><span>on-prem &amp; air-gapped</span></div>
+        <div class="stat"><b>3,000+</b><span>integrations</span></div>
+        <div class="stat"><b>24/7</b><span>always-on</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -206,6 +371,6 @@
   <div class="wrap foot-fine">© 2026 NinjaTech AI · Launching June 2026 · 👻 built by Phantom</div>
 </footer>
 
-<script src="/app.js?v=20260605c"></script>
+<script src="/app.js?v=20260605d"></script>
 </body>
 </html>
