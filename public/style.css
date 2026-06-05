@@ -313,3 +313,18 @@ a.btn-solid:link, a.btn-solid:visited, .subnav a.btn-solid, .topbar a.btn-solid,
 /* professional team renders sit on a dark tile (round 5) */
 .workforce .team-card .ph{background:linear-gradient(160deg,#10141c,#1b2230)}
 .team-card .ph img{object-position:center center}
+
+/* ===== single clean nav (round 6) — replaces two-tier topbar+subnav ===== */
+.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.93);backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--line)}
+.nav .nav-in{display:flex;align-items:center;gap:18px;height:64px}
+.nav .mainnav{display:flex;align-items:center;gap:2px;margin-left:14px}
+.nav .mainnav a{font-size:15px;font-weight:600;color:var(--ink-2);padding:8px 13px;border-radius:9px;white-space:nowrap;transition:color .12s,background .12s}
+.nav .mainnav a:hover{color:var(--blue);background:var(--paper-2)}
+.nav .nav-cta{display:flex;gap:10px;align-items:center;margin-left:auto}
+@media(max-width:860px){
+  .nav .mainnav{gap:0;margin-left:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .nav .mainnav::-webkit-scrollbar{display:none}
+  .nav .mainnav a{padding:8px 9px;font-size:14px}
+  .nav .nav-cta .btn-ghost{display:none}
+}
+@media(max-width:560px){ .nav .mainnav{display:none} }
