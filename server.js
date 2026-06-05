@@ -10,7 +10,11 @@ try { fs.mkdirSync(DATA, { recursive: true }); } catch (e) {}
 const WAITLIST = path.join(DATA, 'waitlist.jsonl');
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public'), { maxAge: '1h' }));
+// no aggressive caching during active iteration; html always revalidated
+app.use(express.static(path.join(__dirname, 'public'), {
+  etag: true, maxAge: 0,
+  setHeaders: (res, p) => { if (p.endsWith('.html')) res.setHeader('Cache-Control', 'no-cache'); }
+}));
 
 // --- Waitlist capture (v1: append to file + log; pipe to CRM/Sheet once connected) ---
 app.post('/api/waitlist', (req, res) => {
